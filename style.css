@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.error-text,
+.error-icon {
+  display: none;
+}
+.field-input.error .error-text,
+.field-input.error .error-icon {
+  display: block;
+}
+.field-input.error input {
+  border: 2px solid hsl(0, 100%, 74%);
+}
+html {
+  font-size: 16px;
+  font-family: "poppins";
+}
+.register {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(img/bg-intro-mobile.png);
+  background-color: hsl(0, 100%, 74%);
+  padding: 100px 0;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 30px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.col1 {
+  flex: 1;
+  margin-bottom: 60px;
+}
+.col1 h2 {
+  color: white;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  margin-bottom: 18px;
+}
+.col1 p {
+  color: white;
+  font-size: 1.1rem;
+  line-height: 2rem;
+}
+.col2 {
+  flex: 1;
+}
+.col2 .box .btn {
+  background-color: hsl(248, 32%, 49%);
+  color: white;
+  padding: 15px 90px;
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 5px hsla(249, 10%, 26%, 0.404);
+  margin-bottom: 20px;
+}
+.col2 .box .btn a {
+  font-size: 1.1rem;
+  line-height: 2.2rem;
+  text-decoration: none;
+  color: white;
+}
+.col2 .box .btn a strong {
+  font-weight: 700;
+}
+.col2 .formcontainer {
+  background-color: white;
+  padding: 30px;
+  border-radius: 13px;
+  box-shadow: 0 5px hsla(249, 10%, 26%, 0.404);
+}
+.col2 .formcontainer .field-input {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.col2 input,
+.btn2 {
+  width: 100%;
+  height: 60px;
+  margin-bottom: 5px;
+  border-radius: 10px;
+  border: 1px solid hsl(246, 25%, 77%);
+  padding-left: 15px;
+  outline: none;
+  color: hsl(249, 10%, 26%);
+  font-family: "poppins";
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.col2 input:focus {
+  border: 1.5px solid hsl(249, 10%, 26%);
+}
+.col2 input::placeholder {
+  color: hsla(249, 10%, 26%, 0.678);
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: "poppins";
+}
+.btn2 {
+  border: none;
+  background-color: hsl(154, 59%, 51%);
+  color: white;
+  box-shadow: 0px 4px hsl(154, 59%, 40%);
+  font-weight: 500;
+  font-size: 1.3rem;
+  cursor: pointer;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+}
+.btn2:hover {
+  background-color: hsl(154, 59%, 66%);
+}
+.col2 .form-footer {
+  margin-top: 10px;
+  color: hsl(246, 25%, 77%);
+  font-size: 0.9rem;
+}
+.col2 .form-footer span {
+  color: hsl(0, 100%, 74%);
+  font-weight: 700;
+}
+.error-icon {
+  position: absolute;
+  top: 20%;
+  right: 20px;
+}
+.error-text {
+  text-align: right;
+  font-size: 0.8rem;
+  font-style: italic;
+  color: hsl(0, 100%, 74%);
+  font-weight: 500;
+  font-family: "poppins";
+}
+@media only screen and (min-width: 1000px) {
+  .register {
+    background-image: url(img/bg-intro-desktop.png);
+  }
+  .container {
+    flex-direction: row;
+    background-image: url(img/bg-intro-desktop.png);
+  }
+  .col1 {
+    text-align: left;
+    padding-right: 50px;
+  }
+  .col1 h1 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+  .col1 p {
+    font-size: 1.1rem;
+  }
+  .col2 {
+    max-width: 540px;
+  }
+  .col2 .box p {
+    font-size: 1.1rem;
+  }
+  .col .formcontainer {
+    padding: 40px;
+  }
+  .col1 input,
+  .col1 input::placeholder {
+    font-size: 1em;
+  }
+  .col1 .form-footer {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .col2 .box .btn {
+    font-size: 0.6rem;
+    background-color: hsl(248, 32%, 49%);
+    color: white;
+    padding: 8px 40px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: 0 5px hsla(249, 10%, 26%, 0.404);
+    margin-bottom: 15px;
+  }
+}
